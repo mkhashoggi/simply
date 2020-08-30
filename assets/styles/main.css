@@ -1441,7 +1441,7 @@ p {
 }
 
 .subscribeBanner {
-  padding: 20px 0;
+  padding: 10px 0;
   background: #f4eaea;
   border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
@@ -2648,6 +2648,11 @@ a>code[class*=language-] {
   background: rgba(0, 0, 0, .6)
 }
 
+body.has-black-cover .cover {
+  color: #fff;
+  background: rgba(0, 0, 0, .9)
+}
+
 body.has-cover .cover {
   color: #fff;
   min-height: 600px;
@@ -2660,7 +2665,7 @@ body.has-cover .header {
 }
 
 body.has-cover .main {
-  margin-top: -66px
+  margin-top: -132px
 }
 
 body.is-transparent .header {
