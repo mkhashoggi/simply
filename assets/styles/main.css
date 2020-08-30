@@ -219,7 +219,7 @@ figcaption {
 }
 
 .text-success {
-  color: #2ecc71
+  color: #a61f26
 }
 
 .kg-bookmark-thumbnail img,
@@ -423,7 +423,7 @@ a:hover {
 }
 
 .link-more {
-  color: #2ecc71
+  color: #a61f26
 }
 
 .link-more:hover {
@@ -769,7 +769,7 @@ svg {
 
 .u-menu-color a.nav-current,
 .u-menu-color a:hover {
-  color: #2ecc71 !important
+  color: #a61f26 !important
 }
 
 .u-textColorWhite {
@@ -922,7 +922,7 @@ svg {
   width: 60px;
   height: 3px;
   margin: 5px 0 24px;
-  background-color: #2ecc71
+  background-color: #a61f26
 }
 
 .u-fontWeightThin {
@@ -1441,7 +1441,7 @@ p {
 
 .subscribeBanner {
   padding: 20px 0;
-  background: #f0fcf5;
+  background: #f4eaea;
   border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
@@ -1456,7 +1456,7 @@ p {
   left: 0;
   width: 2px;
   height: 24px;
-  background-color: #2ecc71;
+  background-color: #a61f26;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%)
 }
@@ -1483,7 +1483,7 @@ p {
 
 .secondaryMenu .nav li a.nav-current,
 .secondaryMenu .nav li a:hover {
-  color: #2ecc71
+  color: #a61f26
 }
 
 .secondaryMenu .nav li a.nav-current {
@@ -2079,8 +2079,8 @@ p {
 
 .button--success {
   color: #fff;
-  background: #2ecc71;
-  border-color: #2ecc71
+  background: #a61f26;
+  border-color: #a61f26
 }
 
 .button--success:hover {
@@ -2802,7 +2802,7 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
 }
 
 .post-share .share-link {
-  margin-left: 8px;
+  margin-right: 8px;
   background-color: #eee
 }
 
@@ -3322,7 +3322,7 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
   text-transform: uppercase;
   letter-spacing: .0625rem;
   font-weight: 500;
-  color: #2ecc71
+  color: #a61f26
 }
 
 .godo-ne-form small {
@@ -3378,7 +3378,7 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
 }
 
 .godo-n-q-d {
-  color: #2ecc71;
+  color: #a61f26;
   font-size: .875rem;
   font-weight: 500;
   letter-spacing: .0625rem;
