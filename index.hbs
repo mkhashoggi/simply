@@ -4,12 +4,24 @@
 {{!-- custom Styles For tag <body> --}}
 {{#contentFor "special_body_class"}}{{#is "home"}}is-home{{/is}} is-frontpage{{/contentFor}}
 
-{{!-- Featured Story --}}
-{{#get "posts" filter="featured:true" limit="1" as |godo_featured_post| }}
-    {{#if godo_featured_post}} {{#foreach godo_featured_post}}{{> "story/story-featured"}} {{/foreach}}{{/if}}
-{{/get}}
+<section class="site-home-header">
+    {{> header-background background=@site.cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
+        <div class="inner">
+            <div class="site-header-content">
+                <h1 class="site-title">
+                    {{#if @site.logo}}
+                        <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                    {{else}}
+                        {{@site.title}}
+                    {{/if}}
+                </h1>
+                <h2 class="site-description">{{@site.description}}</h2>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="site-home-header">
+<header class="site-home-header">
     {{> header-background background=@site.cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
         <div class="inner">
             {{> "site-nav"}}
@@ -25,7 +37,7 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 
 <div class="site-post feed-entry-content">
     <div class="feed-entry-wrap u-maxWidth1100 container">
