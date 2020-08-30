@@ -1344,7 +1344,7 @@ p {
 }
 
 .header {
-  height: 128px;
+  height: 64px;
   top: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -1375,7 +1375,7 @@ p {
 
 .header-logo {
   color: #000;
-  height: 100px
+  height: 30px
 }
 
 .header-logo img {
@@ -2685,6 +2685,10 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
   padding: 4% 0
 }
 
+.site-logo {
+  height: 150px;
+  width: 150px;
+}
 .kg-bookmark-card {
   position: relative
 }
