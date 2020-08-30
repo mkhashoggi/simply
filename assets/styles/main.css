@@ -427,7 +427,8 @@ a:hover {
 }
 
 .link-more:hover {
-  color: #21a75a
+  color: transparent;
+  border-color: #a61f26;
 }
 
 blockquote {
@@ -2064,7 +2065,7 @@ p {
 }
 
 .button--outline-success {
-  color: #28a745;
+  color: #a61f26;
   background-color: transparent;
   background-image: none;
   border-color: #28a745
@@ -2072,8 +2073,8 @@ p {
 
 .button--outline-success:active,
 .button--outline-success:hover {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #a61f26;
+  border-color: #a61f26;
   color: #fff
 }
 
@@ -2084,8 +2085,8 @@ p {
 }
 
 .button--success:hover {
-  background: #21a75a;
-  border-color: #21a75a
+  background: transparent;
+  border-color: #a61f26
 }
 
 .button--large {
