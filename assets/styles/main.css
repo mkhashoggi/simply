@@ -2054,13 +2054,13 @@ p {
 }
 
 .button--primary {
-  background: #102b7b;
-  border: 1px solid #102b7b;
+  background: #a61f26;
+  border: 1px solid #a61f26;
   color: #fff
 }
 
 .button--primary:hover {
-  background: #0d2261;
+  background: #a61f26;
   color: #fff
 }
 
@@ -2068,7 +2068,7 @@ p {
   color: #a61f26;
   background-color: transparent;
   background-image: none;
-  border-color: #28a745
+  border-color: #a61f26
 }
 
 .button--outline-success:active,
@@ -2163,7 +2163,7 @@ p {
   border-radius: 50%;
   line-height: 1.5625rem;
   font-size: 1.125rem;
-  margin-right: 5px
+  margin-left: 5px
 }
 
 .button--tags:hover {
