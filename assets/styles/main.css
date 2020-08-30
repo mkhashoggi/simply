@@ -11,7 +11,9 @@ html {
 }
 
 body {
-  margin: 0
+  margin: 0;
+  text-align: right;
+  direction: rtl;
 }
 
 main {
@@ -654,7 +656,7 @@ table th {
 
 .back-to-top {
   bottom: 100px;
-  right: 4%;
+  left: 4%;
   z-index: 5;
   visibility: hidden;
   opacity: 0;
@@ -1444,14 +1446,14 @@ p {
 }
 
 .subscribeBanner-title {
-  margin-right: 20px
+  margin-left: 20px
 }
 
 .subscribeBanner-title:after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   width: 2px;
   height: 24px;
   background-color: #2ecc71;
@@ -2298,7 +2300,7 @@ p {
 .search-nav-hint {
   display: inline-block;
   line-height: 1.5rem;
-  margin-left: 12px;
+  margin-right: 12px;
   font-size: .8125rem;
   color: #fff
 }
@@ -2389,11 +2391,11 @@ body.has-search .search {
 }
 
 .hh-author {
-  margin-right: 10px
+  margin-left: 10px
 }
 
 .hh-author li:not(:first-child) {
-  margin-left: -6px
+  margin-right: -6px
 }
 
 .hh-author-name>a:hover {
@@ -3987,7 +3989,7 @@ html[data-theme=dark] table tr:nth-child(2n) {
   }
 
   .ss1 .story-body {
-    padding: 0 0 0 2rem;
+    padding: 0 2rem 0 0;
     flex-basis: 34.33333%;
     -webkit-box-pack: center;
     justify-content: center
