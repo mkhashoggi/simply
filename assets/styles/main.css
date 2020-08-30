@@ -1343,7 +1343,7 @@ p {
 }
 
 .header {
-  height: 64px;
+  height: 128px;
   top: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -1374,7 +1374,7 @@ p {
 
 .header-logo {
   color: #000;
-  height: 30px
+  height: 100px
 }
 
 .header-logo img {
