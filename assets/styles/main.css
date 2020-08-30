@@ -1454,7 +1454,7 @@ p {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   width: 2px;
   height: 24px;
   background-color: #a61f26;
