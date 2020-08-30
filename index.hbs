@@ -4,7 +4,12 @@
 {{!-- custom Styles For tag <body> --}}
 {{#contentFor "special_body_class"}}{{#is "home"}}is-home{{/is}} is-frontpage{{/contentFor}}
 
-<header class="site-home-header">
+{{!-- Featured Story --}}
+{{#get "posts" filter="featured:true" limit="1" as |godo_featured_post| }}
+    {{#if godo_featured_post}} {{#foreach godo_featured_post}}{{> "story/story-featured"}} {{/foreach}}{{/if}}
+{{/get}}
+
+<div class="site-home-header">
     {{> header-background background=@site.cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
         <div class="inner">
             {{> "site-nav"}}
@@ -20,7 +25,7 @@
             </div>
         </div>
     </div>
-</header>
+</div>
 
 <div class="site-post feed-entry-content">
     <div class="feed-entry-wrap u-maxWidth1100 container">
