@@ -54,23 +54,6 @@
             </div>
         </div>
     </div>
-    <dic class="site-home-header">
-        {{> header-background background=@site.cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
-            <div class="inner">
-                <div class="site-header-content">
-                    <h1 class="site-title">
-                        {{#if @site.logo}}
-                            <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
-                        {{else}}
-                            {{@site.title}}
-                        {{/if}}
-                    </h1>
-                    <h2 class="site-description">{{@site.description}}</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </header>
 
 {{!-- Menu Mobile --}}
