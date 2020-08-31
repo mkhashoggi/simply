@@ -24,7 +24,7 @@
         <div class="header-right u-flex0 u-flex u-flexEnd u-menu-color">
             {{^is "index, home, tag"}}
                 {{#if @labs.members}}
-                <div class="button button--success js-m-subscribe-toggle u-hide-before-md">{{t "Subscribe"}} </div>
+                    {{#link href="/join/" class="u-textCapitalize button button--primary"}}{{t "Volunteer with us"}}{{/link}}
                 {{/if}}
             {{else}}
                 {{!-- Social Media - partilas/widget/social-media.hbs --}}
