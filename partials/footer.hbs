@@ -17,7 +17,9 @@
             {{!-- Tag Cloud --}}
             <div class="col s12 m6 l4 u-marginBottom30 u-flexColumnTop">
                 <div class="footer-items footer-tags u-flex--1">
-                    <h3 class="footer-items-title u-underline u-fontSize22">{{t "Tags"}}</h3>
+                    <a href="{{@site.url}}/tags" title="{{t "Tags"}}">
+                        <h3 class="footer-items-title u-underline u-fontSize22">{{t "Tags"}}</h3>
+                    </a>
                     <div class="buttonSet">
                         {{#get "tags" limit="10" order="desc"}}
                         {{#foreach tags}}
@@ -25,8 +27,6 @@
                             class="u-textCapitalize button button--outline-success">{{name}}</a>
                         {{/foreach}}
                         {{/get}}
-                        <a href="{{@site.url}}/tags" title="{{t "Tags"}}"
-                            class="u-textCapitalize button button--success">{{t "Tags"}}</a>
                     </div>
                 </div>
             </div>

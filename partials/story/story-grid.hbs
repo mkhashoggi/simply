@@ -28,16 +28,14 @@
             <a href="{{url}}" class="u-block">{{excerpt words="30"}}</a>
         </p>
 
-        {{!-- Author - Primary Tag - Datetime - Read time - partials/helper/helper-by-line.hbs --}}
-        {{> "helper/helper-author-meta"}}
-
         {{!-- Read more --}}
         {{!-- <a href="{{url}}" class="link-more u-fontSize15 u-fontWeightMedium">{{t "Read more"}}</a> --}}
+
+        {{#if tags}}
+            <div class="post-tags buttonSet u-marginTop30">
+                {{#foreach tags from="2" to="4"}}<a href="{{url absolute="true"}}" title="{{name}}" class="button button--tags godo-tracking" data-event-category="Article" data-event-action="Tags" data-event-label="{{name}}" data-event-non-interaction="true">{{name}}</a>{{/foreach}}
+            </div>
+        {{/if}}
     </div>
-    {{#if tags}}
-        <div class="post-tags buttonSet u-marginTop30">
-            {{#foreach tags from="2" to="4"}}<a href="{{url absolute="true"}}" title="{{name}}" class="button button--tags godo-tracking" data-event-category="Article" data-event-action="Tags" data-event-label="{{name}}" data-event-non-interaction="true">{{name}}</a>{{/foreach}}
-        </div>
-    {{/if}}
 
 </article>
