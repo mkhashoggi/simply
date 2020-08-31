@@ -15,8 +15,9 @@
         <p class="m-subscribe-des u-fontSizeSmall u-textMuted u-marginBottom20">{{t "Stay up to date! Get all the latest & greatest posts delivered straight to your inbox"}}</p>
 
         {{!-- Form --}}
-        <form class="f-form" data-members-form="subscribe">
+        <form action="https://gulf-can.us17.list-manage.com/subscribe/post?u=18e4194c3c0ec834a7142c10e&amp;id=85733d054b" method="post" class="f-form">
             <input
+                name="EMAIL"
                 class="u-block subscribe-email u-marginBottom15 u-textAlignCenter"
                 data-members-email
                 placeholder="{{t "youremail@example.com"}}"
@@ -25,7 +26,7 @@
                 autocomplete="off"
                 required
             />
-
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18e4194c3c0ec834a7142c10e_85733d054b" tabindex="-1" value=""></div>
             <button id="m-subscribe-btn" class="button button--primary u-sizeFullWidth u-fontWeightMedium" type="submit">
                 <span class="button-text u-fontSizeBase">{{t "Subscribe"}}</span>
                 {{> "icons/loader"}}
