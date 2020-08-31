@@ -958,6 +958,10 @@ svg {
   text-align: right
 }
 
+.u-textAlignLeft {
+  text-align: left
+}
+
 .u-textAlignCenter {
   text-align: center
 }
