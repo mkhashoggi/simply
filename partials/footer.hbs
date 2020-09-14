@@ -39,8 +39,8 @@
                     <p class="u-marginBottom15">{{t "Get the best viral stories straight into your inbox!"}}</p>
 
                     {{!-- Form --}}
-                    <form action="https://gulf-can.us17.list-manage.com/subscribe/post?u=18e4194c3c0ec834a7142c10e&amp;id=85733d054b" method="post" class="f-form validate" target="_blank">
-                        <input id="mce-EMAIL" name="EMAIL" class="f-form-input u-block subscribe-email u-marginBottom15" data-members-email
+                    <form class="f-form" data-members-form="subscribe">
+                        <input class="f-form-input u-block subscribe-email u-marginBottom15" data-members-email
                             placeholder="{{t "youremail@example.com"}}" aria-label="{{t "youremail@example.com"}}"
                             aria-describedby="f-form-subscribe-btn" autocomplete="off" required />
 
@@ -48,7 +48,6 @@
                             <span class="button-text u-fontSizeBase">{{t "Subscribe"}}</span>
                             {{> "icons/loader"}}
                         </button>
-                        <input type="text" name="b_18e4194c3c0ec834a7142c10e_85733d054b" tabindex="-1" value="">
                         <div class="message-success u-paddingTop15 u-hide">
                             {{{t "<strong>Great!</strong> Check your inbox and click the link to confirm your subscription"}}}
                         </div>
