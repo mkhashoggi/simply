@@ -49,9 +49,11 @@
         {{> "header"}}
 
         {{!-- Subscribe and tag -> this will be below the header --}}
-        {{#is "index, home, tag"}}
-            {{> "widget/subscribe-and-secondary-menu"}}
-        {{/is}}
+        {{#if @labs.members}}
+            {{#is "index, home, tag"}}
+                {{> "widget/subscribe-and-secondary-menu"}}
+            {{/is}}
+        {{/if}}
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         <main class="main u-relative {{{block "special_site_main_class"}}}">{{{body}}}</main>
@@ -79,10 +81,12 @@
     </div>
 
     {{!-- notification Subscribe --}}
+    {{#if @labs.members}}
     <div class="subscribe-success-message u-flexCenter u-justify-content-center">
         <span class="u-fontSize22" style="margin-right:10px">🎉</span> {{t "You've successfully subscribed to"}} {{@site.title}}!
         <div class="notification-close button button--success">{{t "OK"}}</div>
     </div>
+    {{/if}}
 
     {{!-- Icons --}}
     {{> "icons/icons-symbol-defs"}}

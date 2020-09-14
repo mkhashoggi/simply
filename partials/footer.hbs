@@ -32,6 +32,7 @@
             </div>
 
             {{!-- members subscribe --}}
+            {{#if @labs.members}}
             <div class="col s12 m6 l4 u-marginBottom30 u-flexColumnTop">
                 <div class="footer-items u-flex--1">
                     <h3 class="footer-items-title u-underline u-fontSize22">{{t "Subscribe"}}</h3>
@@ -56,6 +57,7 @@
                     </form>
                 </div>
             </div>
+            {{/if}}
 
             {{!-- Copy --}}
             <div class="col s12 u-paddingTop20 u-textAlignCenter u-fontSizeSmaller">

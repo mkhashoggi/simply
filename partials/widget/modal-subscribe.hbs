@@ -1,4 +1,5 @@
 {{!-- Email subscribe form at the Top of the page --}}
+{{#if @labs.members}}
 
 <aside class="m-subscribe u-fixed u-absolute0 u-flexColumnContentCenter u-flexCenter">
     {{!-- Bg --}}
@@ -14,7 +15,7 @@
         <p class="m-subscribe-des u-fontSizeSmall u-textMuted u-marginBottom20">{{t "Stay up to date! Get all the latest & greatest posts delivered straight to your inbox"}}</p>
 
         {{!-- Form --}}
-        <form action="https://gulf-can.us17.list-manage.com/subscribe/post?u=18e4194c3c0ec834a7142c10e&amp;id=85733d054b" method="post" class="f-form" target="_blank">
+        <form action="https://gulf-can.us17.list-manage.com/subscribe/post?u=18e4194c3c0ec834a7142c10e&amp;id=85733d054b" method="post" class="f-form">
             <input
                 name="EMAIL"
                 class="u-block subscribe-email u-marginBottom15 u-textAlignCenter"
@@ -35,3 +36,5 @@
         </form>
     </div>
 </aside>
+
+{{/if}}
